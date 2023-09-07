@@ -1,0 +1,86 @@
+* {box-sizing: border-box}
+
+
+/* Campos de entrada de ancho completo */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 25px;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+ion-toolbar{
+  --ion-background-color:#0f71ce;
+  margin:0 auto;
+}
+
+ion-content{
+--ion-background-color:lightblue;
+margin:0 auto;
+}
+
+
+
+/* Establece un estilo para todos los botones */
+button {
+  background-color: #115cde;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  border-radius: 25px;
+}
+
+button:hover {
+  opacity:1;
+}
+
+
+/* Estilos adicionales para el botón cancelar */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+
+
+.center-button {
+    display: block;
+    margin: 55px auto;
+    
+  }
+  
+
+
+/* Agregar relleno a los elementos del contenedor */
+.container {
+  padding: 16px;
+}
+
+
+/* Borrar flotadores */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/* Cambiar estilos para abarcar y cancelar botón en pantallas extra pequeñas */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,102 @@
+
+/* Formulario con borde */
+form {
+    border: 3px solid #f1f1f1;
+  }
+  
+
+/* Entradas de ancho completo */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 25px;
+  }
+  
+
+/* Establece un estilo para todos los botones */
+  button {
+    background-color: #0f71ce;
+    color: white;
+    padding: 14px 20px;
+    margin: 55px auto;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+
+    border-radius: 25px;
+  }
+  
+
+/* Añadir un efecto de desplazamiento para los botones */
+  button:hover {
+    opacity: 0.8;
+  }
+  
+
+/* Estilo extra para el botón cancelar (rojo) */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+    color: white;
+    margin: 15px auto;
+    border: none;
+    cursor: pointer;
+  
+  }
+  
+ /* Centrar la imagen del avatar dentro de este contenedor */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  
+ 
+/* Imagen de avatar */
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+  
+ 
+/* Agregar relleno a los contenedores */
+  .container {
+    padding: 16px;
+  }
+  
+
+/* El texto "Olvidé mi contraseña" */
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  
+/* Cambiar estilos para abarcar y cancelar botón en pantallas extra pequeñas */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }
+
+  ion-toolbar{
+    --ion-background-color:#0f71ce;
+    margin:0 auto;
+}
+
+ion-content{
+  --ion-background-color:lightblue;
+  margin:0 auto;
+}
+
+button:hover{
+  color: #f44336;
+}

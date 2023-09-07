@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Recuperacion de Contraseña</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  
+    <div class="container">
+      <h1 style="text-align: center;">Recuperar Contraseña</h1>
+      <p>Por favor complete este formulario para Recuperar tu Contraseña.</p>
+ 
+
+      <label for="username"><b>Nombre Usuario</b></label>
+      <input type="text" placeholder="Nombre Usuario" name="username" required>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Ingrese Email" name="email" required>
+
+      <button type="submit" class="signupbtn center-button" [routerLink]="['/login']">Enviar</button>
+    </div>
+  
+</ion-content>
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="home">
+      <ion-icon name="arrow-back"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button tab="radio">
+      <ion-icon name="radio-button-off" [routerLink]="['/home']"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button tab="library">
+      <ion-icon name="square-outline"></ion-icon>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

@@ -1,0 +1,50 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      
+    </ion-buttons>
+    <ion-title>Inicio Session</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ 
+    <div class="imgcontainer">
+      <img src="assets/icon/icono2.png" alt="Avatar" class="avatar">
+    </div>
+  
+    <div class="container">
+      <label for="uname"><b>Usuario</b></label>
+      <input type="text" placeholder="Ingrese Usuario" name="uname" required>
+  
+      <label for="psw"><b>Contraseña</b></label>
+      <input type="password" placeholder="Ingrese Contraseña" name="psw" required>
+  
+      <button class="ingresar"  type="submit" routerLink="['/home']">Ingresar</button>
+    </div>
+  
+    
+      <button type="button" class="cancelbtn" [routerLink]="['/home']" >Salir</button>
+      <span class="psw" style=" margin-bottom: 80%; margin-right: 5%;" >Has olvidado tu <a href="recuperate">Contraseña?</a></span>
+  
+
+
+  <div id="container" style="text-align: center;">
+    <p><a target="_self" rel="noopener noreferrer" href="register">Crear Cuenta</a></p>
+  </div>
+</ion-content>
+
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="home">
+      <ion-icon name="arrow-back"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button tab="radio">
+      <ion-icon name="radio-button-off" [routerLink]="['/home']"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button tab="library">
+      <ion-icon name="square-outline"></ion-icon>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

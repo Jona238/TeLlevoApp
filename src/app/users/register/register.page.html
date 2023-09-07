@@ -1,0 +1,55 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Crear Cuenta</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form action="action_page.php" style="border:1px solid #ccc">
+    <div class="container">
+      <h1 style="text-align: center;">Registrarse</h1>
+      <p>
+        Por favor complete este formulario para crear una cuenta.</p>
+      <hr>
+
+      <label for="email"><b>Nombre Usuario</b></label>
+      <input type="text" placeholder="Nombre Usuario" name="email" required>
+  
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Ingrese Email" name="email" required>
+  
+      <label for="psw"><b>Contraseña</b></label>
+      <input type="password" placeholder="Ingrese Contraseña" name="psw" required>
+  
+      <label for="psw-repeat"><b>Repetir Contraseña</b></label>
+      <input type="password" placeholder="Repetir  Contraseña" name="psw-repeat" required>
+  
+  
+      <p>Al crear una cuenta aceptas nuestra <a href="#" style="color:dodgerblue">
+        Términos y privacidad</a>.</p>
+  
+      <div class="clearfix">
+        <button type="button" class="cancelbtn">Cancelar</button>
+        <button type="submit" class="signupbtn">Registrar</button>
+      </div>
+      <p style="text-align: center;">Si ya tienes cuenta<a target="_self" rel="noopener noreferrer" href="login">  Ingresa</a></p>
+    </div>
+  </form>
+</ion-content>
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="home">
+      <ion-icon name="arrow-back"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button tab="radio">
+      <ion-icon name="radio-button-off" [routerLink]="['/home']"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button tab="library">
+      <ion-icon name="square-outline"></ion-icon>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
