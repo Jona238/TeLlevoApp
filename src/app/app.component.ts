@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { MenuController } from '@ionic/angular';
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
@@ -6,13 +8,30 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public appPages = [
-    { title: 'Login', url: 'login', icon: 'log-in' },
     { title: 'Home', url: 'home', icon: 'home' },
-    { title: 'Mis viajes', url: 'recuperate', icon: 'car' },
-    { title: 'Historial', url: 'register', icon: 'journal' },
-   
-    { title: 'Salir', url: 'Salir', icon: 'log-out' },
-  ];
-  public labels = ['Ofertas', 'Viajes Especiales', 'Reclamos'];
-  constructor() {}
+    { title: 'Mapa', url: 'mapa', icon: 'map' },
+    { title: 'Choferes', url: 'chofer', icon: 'car' },
+];
+  public labels = ['Contacto'];
+
+  constructor(public router: Router, private menu: MenuController) {}
+
+
+  soliciatar(){
+    this.router.navigate(['/soliciatar'])
+  }
+
+
+  reservar(){
+    this.router.navigate(['/reservar'])
+  }
+
+  horario(){
+    this.router.navigate(['/horario'])
+  }
+  cerrarSesion(){
+    localStorage.removeItem('autenticado');
+    this.router.navigate(["/inicio"]);
+    this.menu.close();
+  }
 }

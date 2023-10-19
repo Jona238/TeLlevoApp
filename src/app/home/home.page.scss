@@ -1,14 +1,44 @@
-ion-toolbar{
-    --ion-background-color:#0f71ce;
-    margin:0 auto;
+
+ion-header{
+  --ion-background-color:black;
+  margin:0 auto;
+}
+
+ion-title {
+  color: white;
 }
 
 ion-content{
-  --ion-background-color:lightblue;
+  --ion-background-color:black;
   margin:0 auto;
 }
 
-ion-card {
-    --ion-background-color:#ffffff;
-  margin:0 auto;
+
+ion-content{
+    --ion-background-color:black;
+    margin:0 auto;
+  }
+ion-searchbar {
+  color: aliceblue;
+} 
+
+ion-button {
+  background-color : rgba(247, 241, 241, 0.384)!important;
+  border-radius: 10px;
+  color:black;
+  border-color: black ;
+
 }
+
+img{
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+}
+ion-card{
+ width:250px;
+ display: grid;
+ background-color: rgb(238, 228, 228);
+}
+ 
+

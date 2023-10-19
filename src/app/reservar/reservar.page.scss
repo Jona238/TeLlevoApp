@@ -1,0 +1,28 @@
+ion-content{
+    --ion-background-color:black;
+    margin:0 auto;
+  }
+
+  .contenedor {
+    display: inline-block;
+  }
+  
+  .icono {
+    vertical-align: middle; /* Alinea verticalmente el icono con el texto */
+    color: white;
+    height: 70px;
+    width: 70px;
+    margin: 15px;
+  }
+  
+  .texto {
+    display: inline-block;
+    vertical-align: middle; /* Alinea verticalmente el texto con el icono */
+    color: white;
+  }
+.img{
+    width: 100%;
+    height:556px;
+    border-radius: 33px;
+}  
+  

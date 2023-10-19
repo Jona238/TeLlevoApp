@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { ValidadoGuard } from './guard/validado.guard';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'login',
+    redirectTo: 'home',
     pathMatch: 'full'
   },
   {
@@ -12,24 +13,38 @@ const routes: Routes = [
     loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
   },
   {
-    path: 'login',
-    loadChildren: () => import('./users/login/login.module').then( m => m.LoginPageModule)
-  },
-  {
-    path: 'register',
-    loadChildren: () => import('./users/register/register.module').then( m => m.RegisterPageModule)
-  },
-  {
     path: 'inicio',
     loadChildren: () => import('./inicio/inicio.module').then( m => m.InicioPageModule)
   },
   {
     path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule),
+    canActivate: [ValidadoGuard]
   },
   {
-    path: 'recuperate',
-    loadChildren: () => import('./users/recuperate/recuperate.module').then( m => m.RecuperatePageModule)
+    path: 'registro',
+    loadChildren: () => import('./registro/registro.module').then( m => m.RegistroPageModule)
+  },
+  {
+    path: 'mapa',
+    loadChildren: () => import('./mapa/mapa.module').then( m => m.MapaPageModule),
+    canActivate: [ValidadoGuard]
+  },
+  {
+    path: 'chofer',
+    loadChildren: () => import('./chofer/chofer.module').then( m => m.ChoferPageModule)
+  },
+  {
+    path: 'soliciatar',
+    loadChildren: () => import('./soliciatar/soliciatar.module').then( m => m.SoliciatarPageModule)
+  },
+  {
+    path: 'reservar',
+    loadChildren: () => import('./reservar/reservar.module').then( m => m.ReservarPageModule)
+  },
+  {
+    path: 'horario',
+    loadChildren: () => import('./horario/horario.module').then( m => m.HorarioPageModule)
   }
 ];
 

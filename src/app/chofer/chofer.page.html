@@ -1,0 +1,15 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>choferes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+<ion-item class="item" *ngFor="let personaje of personajes" >
+  <ion-avatar aria-hidden="true" class="imagen" slot="start">
+    <img src="{{ personaje.picture.medium }}" alt="">  <!-- muestra la imagen del objeto results-->
+  </ion-avatar>
+  <ion-label style="color: white;">{{ personaje.name.first }}{{ personaje.name.last }}</ion-label>  <!-- muestra el nobmre del objeto results-->
+</ion-item>
+</ion-content>

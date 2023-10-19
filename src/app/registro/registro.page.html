@@ -1,24 +1,29 @@
 <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Registro</ion-title>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <form [formGroup]="formularioLogin" class="form_main">
+
+  <form [formGroup]="formularioRegistro" class="form_main">
+
+
   <div class="imgcontainer">
-    <ion-img src="assets/icon/apptellevo.png"></ion-img>
+    <!-- <ion-img src="assets/icon/apptellevo.png"></ion-img> -->
   </div>
 
- <!-- <div class="tipoUsuario">
-  <button name="ingresar" (click)="ingresar()" class="tipo">Cliente</button>
-
-  <button name="ingresar" (click)="ingresar()" class="tipo">Conductor</button>
-  </div>
--->
   <div class="container">
+
     <!--<label for="uname" style="color: white;"><b>Usuario</b></label>-->
-    <input formControlName="usuario" type="email" placeholder="Ingrese Usuario" name="usuario" required>
+    <input formControlName="usuario" type="text" placeholder="Ingrese Usuario" name="usuario" required>
+
+    <input formControlName="correo" type="email" placeholder="Ingrese Correo" name="correo" required>
 
     <!--<label for="psw" style="color: white;"><b>Contraseña</b></label>-->
     <input formControlName="contrasena" type="password" placeholder="Ingrese Contraseña" name="contrasena" required>
+
+    <input formControlName="repetirContrasena" type="password" placeholder="Confirme Contraseña" name="repetirContrasena" required>
   </div>
 
   
@@ -33,11 +38,11 @@
 
   <div id="container">
 
-  <button name="ingresar" (click)="ingresar()" class="btn">Ingresar</button>
+  <button name="ingresar" (click)="registrar()" class="btn">Registrar</button>
+
+  <p class="pregunta">¿Ya tienes una cuenta?<a  class="linkIniciar" href="inicio"> Iniciar sesión</a></p>
   
   </div>
 </form>
-
-<p class="pregunta">¿No tienes una cuenta?<a  class="linkRegistro" href="registro"> Registrate</a></p>
 
 </ion-content>

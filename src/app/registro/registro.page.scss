@@ -1,8 +1,33 @@
 
 
+ion-header{
+    --ion-background-color:black;
+    margin:0 auto;
+  }
+
+ion-title {
+    color: white;
+}
+
 ion-content{
     --ion-background-color:black;
     margin:0 auto;
+  }
+
+  
+.linkIniciar:hover{
+    cursor: crosshair;
+    color: white;
+  }
+  
+  
+.linkIniciar {
+    color: rgb(84, 79, 79);
+    text-decoration: none;
+  }
+.pregunta {
+    color: white;
+    margin-left: 50px;
   }
 
 /* Formulario con borde 
@@ -11,46 +36,21 @@ form {
   }*/
   
 
-.tipoUsuario{
-  margin-left: 90px;
-  display: -webkit-inline-box;
-}
-
-.tipo{
-  background-color: rgb(84, 79, 79);
-  color: white;
-}
-
-.pregunta {
-  color: white;
-  margin-left: 50px;
-}
-
-.linkRegistro:hover{
-  cursor: crosshair;
-  color: white;
-}
-
-
-.linkRegistro {
-  color: rgb(84, 79, 79);
-  text-decoration: none;
-}
-
 /* Entradas de ancho completo */
-  input[type=email], input[type=password] {
-    width: 100%;
-    height: 60px;
+  input[type=email], input[type=password], input[type=text]{
+    width: 96%;
+    height: 68px;
+    margin: 10px;
+    margin-top: 20px;
   }
   
 
 /* Establece un estilo para todos los botones */
-  .btn {
+  button {
     background-color: rgb(84, 79, 79);
     color: white;
     padding: 10px auto;
     margin: 30px auto;
-    margin-top: 0px;
     border: none;
     cursor: pointer;
     width: 90%;
@@ -80,13 +80,13 @@ form {
  /* Centrar la imagen del avatar dentro de este contenedor */
   .imgcontainer {
     text-align: center;
-    margin: 0 0 0 0;
+    margin: 24px 0 12px 0;
   }
   
  
 /* Imagen de avatar */
   img.avatar {
-    width: 40%;
+    width: 10%;
     border-radius: 50%;
   }
   

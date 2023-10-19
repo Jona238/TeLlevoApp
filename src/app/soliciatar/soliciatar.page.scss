@@ -1,0 +1,47 @@
+ion-content{
+    --ion-background-color:black;
+    margin:0 auto;
+  }
+
+  .contenedor {
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+  }
+
+  h1{
+    color: white;
+    text-align: center;
+  }
+  
+  .icono {
+    vertical-align: middle; /* Alinea verticalmente el icono con el texto */
+    color: white;
+    height: 50px;
+    width: 50px;
+    margin: 15px;
+  }
+  input{
+    background-color:white;
+    width: 65%;
+    height: 50px;
+    margin: 31px;
+    border-radius: 25px;
+  }
+  button{
+    background-color: rgb(84, 79, 79);
+    color: white;
+    margin: 60px auto;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+    height: 50px;
+    display: block;
+  }
+
+  .img{
+    margin:  40px auto;
+    width: 100%;
+    height:556px;
+    border-radius: 33px;
+}  
